@@ -1,0 +1,10 @@
+name: bench-ruff-namespace-cold
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: namespace-profile-asgar
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo build --release 
