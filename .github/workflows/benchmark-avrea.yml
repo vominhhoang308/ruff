@@ -1,0 +1,12 @@
+name: Benchmark on Avrea
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: avrea-ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Build everything (release)
+        run: cargo build --release --all-targets
