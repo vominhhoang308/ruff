@@ -1,9 +1,9 @@
-name: Benchmark on Avrea
+name: Benchmark on Github
 on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: avrea-ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Install Rust
