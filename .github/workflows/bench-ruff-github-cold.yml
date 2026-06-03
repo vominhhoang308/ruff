@@ -1,4 +1,4 @@
-name: bench-ruff-PLATFORM-cold
+name: bench-ruff-github-cold
 on:
   workflow_dispatch:
 jobs:
