@@ -1,4 +1,4 @@
-name: bench-ruff-PLATFORM-cold
+name: bench-ruff-avrea-cold
 on:
   workflow_dispatch:
 jobs:
